@@ -625,15 +625,6 @@ p.header-description {
   opacity: 0.5;
 }
 
-.call {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media only screen and (max-width: 900px) {
   .site-header__nav {
     -webkit-box-orient: vertical;
