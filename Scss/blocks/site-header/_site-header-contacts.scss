@@ -97,16 +97,16 @@ p.header-description{
     }
 
     .site-header__contacts{
-        display: none;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -100%;
         width: 100%;
         height: 60vh;
         background-color: $color-blue;
         justify-content: space-between;
         padding: 80px 25px 25px;
         align-items: flex-start;
+        transition: left 0.5s ease-in-out;
         
         p{
             color: #fff;
@@ -129,7 +129,7 @@ p.header-description{
         }
     }
     .show-mobile .site-header__contacts{
-        display: flex;
+        left: 0;
     }
 
     .site-header__container-contacts .header-description{
