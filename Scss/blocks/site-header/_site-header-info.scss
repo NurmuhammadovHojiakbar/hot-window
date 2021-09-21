@@ -1,0 +1,66 @@
+.site-header__info{
+    padding: 40px 25px;
+
+    &--desc{
+        max-width: 650px;
+        width: 100%;
+
+        div{
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+    
+            .calculate{
+                padding: 20px 45px;
+                border: 1px solid $color-blue;
+                border-radius: 50px;
+                display: block;
+                text-decoration: none;
+                font-size: 22px;
+                line-height: 1;
+                color: $color-blue;
+                text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+
+                &:hover{
+                    background-color: $color-blue;
+                    color: #fff;
+                }
+                &:active{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.site-title{
+    text-transform: uppercase;
+    font-family: $font-family-bold;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 1;
+    color: $color-blue;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.site-caption{
+    font-family: $font-family-bold;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-header__info--text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #484848;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
