@@ -1,0 +1,85 @@
+.site-main__title{
+    padding: 8px 30px;
+    border: 2px solid $color-blue;
+    border-radius: 6px;
+    max-width: 920px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 45px;
+    background-color: #fff;
+    color: $color-blue;
+
+    &-blue{
+        background-color: $color-blue;
+        color: #fff;
+    }
+}
+.site-main__info{
+    margin-bottom: 70px;
+}
+
+.main-info__aside-content{
+    padding: 28px 18px;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 6px;
+
+    .main-info__caption{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .aside-content__list{
+        @include list-unstyled;
+    }
+
+    .aside-content__item{
+        display: flex;
+        font-size: 16px;
+        line-height: 24px;
+
+        &::before{
+            content: "";
+            margin-right: 6px;
+            flex-shrink: 0;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.main-info__aside-top{
+    border: 2px solid #fff;
+    background-color: #E8F6FF;
+    margin-bottom: 18px;
+
+    .aside-content__item{
+        align-items: baseline;
+
+        &::before{
+            width: 12px;
+            height: 12px;
+            background: url("../img/icons/check-Icon.png") no-repeat center center;
+            background-size: contain;
+        }
+    }
+}
+
+.main-info__aside-bottom{
+    border: 6px solid $color-blue;
+
+    .aside-content__item{
+        align-items: center;
+
+        &::before{
+            width: 6PX;
+            height: 6PX;
+            background: $color-blue;
+            border-radius: 100%;
+            background-size: contain;
+        }
+    }
+}

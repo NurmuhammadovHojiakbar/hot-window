@@ -852,6 +852,102 @@ p.header-description {
   }
 }
 
+.site-main__title {
+  padding: 8px 30px;
+  border: 2px solid #2f6dce;
+  border-radius: 6px;
+  max-width: 920px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 45px;
+  background-color: #fff;
+  color: #2f6dce;
+}
+
+.site-main__title-blue {
+  background-color: #2f6dce;
+  color: #fff;
+}
+
+.site-main__info {
+  margin-bottom: 70px;
+}
+
+.main-info__aside-content {
+  padding: 28px 18px;
+  max-width: 330px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.main-info__aside-content .main-info__caption {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-info__aside-content .aside-content__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-info__aside-content .aside-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-info__aside-content .aside-content__item::before {
+  content: "";
+  margin-right: 6px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main-info__aside-content .aside-content__item p {
+  margin: 0;
+}
+
+.main-info__aside-top {
+  border: 2px solid #fff;
+  background-color: #E8F6FF;
+  margin-bottom: 18px;
+}
+
+.main-info__aside-top .aside-content__item {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.main-info__aside-top .aside-content__item::before {
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/check-Icon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.main-info__aside-bottom {
+  border: 6px solid #2f6dce;
+}
+
+.main-info__aside-bottom .aside-content__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-info__aside-bottom .aside-content__item::before {
+  width: 6PX;
+  height: 6PX;
+  background: #2f6dce;
+  border-radius: 100%;
+  background-size: contain;
+}
+
 .site-main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
