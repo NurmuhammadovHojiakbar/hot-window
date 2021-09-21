@@ -61,6 +61,15 @@
         &__list{
             text-align: start;
         }
+        &__caption{
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        button{
+            font-size: 16px;
+            line-height: 1;
+        }
     }
 
     .footer-top-img{

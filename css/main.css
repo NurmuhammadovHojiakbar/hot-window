@@ -936,6 +936,14 @@ p.header-description {
   .footer-top-info__list {
     text-align: start;
   }
+  .footer-top-info__caption {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .footer-top-info button {
+    font-size: 16px;
+    line-height: 1;
+  }
   .footer-top-img {
     max-width: 50%;
     margin-right: 0;
