@@ -1,0 +1,102 @@
+button{
+    cursor: pointer;
+    border: none;outline: none;
+}
+
+.btn-normal{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #005AE9;
+    box-shadow: 0px 22px 44px -12px #005AE9;
+    border-radius: 70px;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 45px;
+
+    &:hover{
+        opacity: 0.9;
+    }
+    &:active{
+        background: #085ADB;
+        box-shadow: none;
+    }
+    
+}
+
+
+// Slider Buttons 
+
+.btn-change{
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    background-size: contain;
+
+    &:hover{
+        opacity: 0.9;
+    }
+    &:active{
+        opacity: 0.6;
+    }
+
+    &__left{
+        background: transparent url("../img/icons/black-left-arrow.png") no-repeat center center;
+    }
+    &__right{
+        background: #1567E9 url("../img/icons/black-right-arrow.png") no-repeat center center;
+    }
+    &__blue--left{
+        background: #1567E9 url("../img/icons/white-left-arrow.png") no-repeat center center;
+    }
+    
+    &__blue--right{
+        background: #1567E9 url("../img/icons/white-right-arrow.png") no-repeat center center;
+    }
+}
+
+
+// Winter Button 
+
+.btn-winter{
+    position: relative;
+    background: rgba(255, 255, 255, 0.67) url("../../img/icons/hot-window-before.png") no-repeat 0 center;
+    background-size: contain;
+    box-shadow: 0px 22px 44px rgba(0, 90, 233, 0.15);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    padding: 22px 50px;
+    font-size: 24px;
+    line-height: 1;
+    color: #000;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 22px;
+        height: 22px;
+        background-color: #2F6DCE;
+        box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.76);
+        border-radius: 5px;
+        border: 5px solid #fff;
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg); 
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover::before{
+        transform:translateX(-50%) translateY(-50%) rotate(135deg); 
+    }
+
+    &:active{
+        background-color: #2F6DCE;
+        color: #fff;
+        
+        &::before{
+            background: #FF3939;
+        }
+    }
+}
+
+
