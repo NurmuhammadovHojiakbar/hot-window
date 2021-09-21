@@ -313,9 +313,9 @@ button {
           box-shadow: 0px 22px 44px rgba(0, 90, 233, 0.15);
   border-radius: 6px;
   width: 100%;
-  max-width: 400px;
-  padding: 22px 50px;
-  font-size: 24px;
+  max-width: 350px;
+  padding: 18px 40px;
+  font-size: 20px;
   line-height: 1;
   color: #000;
 }
@@ -687,12 +687,23 @@ p.header-description {
 }
 
 .site-header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 25px;
 }
 
 .site-header__info--desc {
   max-width: 650px;
   width: 100%;
+  margin-right: 30px;
+  background: url("../img/icons/vector-line.svg") no-repeat 70% 65%;
 }
 
 .site-header__info--desc div {
@@ -728,7 +739,7 @@ p.header-description {
   text-transform: uppercase;
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-weight: 900;
-  font-size: 65px;
+  font-size: 60px;
   line-height: 1;
   color: #2f6dce;
   margin-top: 0;
@@ -738,8 +749,8 @@ p.header-description {
 .site-caption {
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 37px;
+  font-size: 25px;
+  line-height: 32px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -747,12 +758,89 @@ p.header-description {
 
 .site-header__info--text {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #484848;
   max-width: 450px;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background: url("../img/images/window.png") no-repeat 100% center;
+  background-size: contain;
+}
+
+.buttons-container .btn-winter {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1125px) {
+  .site-header__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .site-header__info--desc {
+    background: url("../img/icons/vector-line.svg") no-repeat 100% 65%;
+    background-size: 10%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .site-header__info--desc .site-header__info--text, .site-header__info--desc div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons-container {
+    max-width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .buttons-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .site-header__info--desc {
+    background: url("../img/icons/vector-line.svg") no-repeat 100% 50%;
+    background-size: 10%;
+  }
+  .site-header__info--desc .site-title {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .site-header__info--desc .site-caption {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .site-header__info--desc .site-header__info--text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .site-header__info--desc div .calculate {
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 1;
+  }
 }
 
 .site-main {
