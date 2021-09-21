@@ -655,8 +655,8 @@ p.header-description {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-transform: translateY(110%);
-            transform: translateY(110%);
+    -webkit-transform: translateY(130%);
+            transform: translateY(130%);
   }
   .site-nav__links .site-nav__item:not(:last-child) {
     margin-bottom: 20px;
