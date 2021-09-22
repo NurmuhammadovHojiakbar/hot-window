@@ -1027,7 +1027,6 @@ p.header-description {
   position: relative;
   padding: 50px 0;
   background-color: #f9f9f9;
-  margin-bottom: 80px;
 }
 
 .slider-container__caption {
@@ -1219,6 +1218,33 @@ p.header-description {
 .slider-item__info-cost .info-cost__caption-sub {
   font-size: 24px;
   line-height: 24px;
+}
+
+.bg-white {
+  padding-bottom: 80px;
+}
+
+.bg-near-white {
+  margin-bottom: 80px;
+  padding: 80px 0;
+  background-color: #E8F6FF;
+}
+
+.bg-near-white .title-right {
+  margin-left: auto;
+  text-align: end;
+}
+
+.bg-near-white .main-info__offer {
+  margin-right: 30px;
+}
+
+.bg-near-white .main-info__aside {
+  margin-right: 0;
+}
+
+.bg-near-white .slider-container {
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 1125px) {
