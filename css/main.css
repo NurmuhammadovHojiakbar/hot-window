@@ -1296,6 +1296,9 @@ p.header-description {
 }
 
 @media only screen and (max-width: 750px) {
+  .bg-near-white .main-info__offer {
+    margin-right: 0;
+  }
   .site-main__container.container {
     padding-left: 0;
     padding-right: 0;
