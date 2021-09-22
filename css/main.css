@@ -1085,8 +1085,7 @@ p.header-description {
 
 .slider {
   position: relative;
-  max-width: 840px;
-  width: 100%;
+  width: 840px;
   height: 223px;
   margin-left: auto;
   margin-right: auto;
@@ -1220,6 +1219,99 @@ p.header-description {
 .slider-item__info-cost .info-cost__caption-sub {
   font-size: 24px;
   line-height: 24px;
+}
+
+@media only screen and (max-width: 1125px) {
+  .slider-container .btn-change {
+    top: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .slider {
+    width: 478px;
+  }
+  .slider-item {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .slider-item__discount {
+    padding: 45px 6px;
+  }
+  .slider-item__discount-title {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .slider-item__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider-item__info-cost {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 15px;
+  }
+  .slider-item .info-product__image {
+    width: 90px;
+    height: 90px;
+  }
+  .slider-item .info-product__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .slider-item .info-cost__caption {
+    font-size: 28px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .site-main__container.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .site-main__container.container .site-main__info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .site-main__container.container .site-main__title {
+    max-width: 80%;
+  }
+  .site-main__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-main__info .main-info__aside {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    width: 340px;
+  }
+  .slider .slider-item__info-product {
+    padding: 10px;
+  }
+  .slider .info-product__image {
+    margin-right: 15px;
+  }
+  .slider-controller__button span {
+    display: none;
+  }
+  .site-main__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .site-main {

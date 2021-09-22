@@ -209,8 +209,7 @@
 
 .slider{
     position: relative;
-    max-width: 840px;
-    width: 100%;
+    width: 840px;
     height: 223px;
     margin-left: auto;
     margin-right: auto;
@@ -304,5 +303,100 @@
                 line-height: 24px;
             }
         }
+    }
+}
+
+
+@include breakpoint-down(1125px){
+    .slider-container{
+        .btn-change{
+            top: 80%;
+        }
+    }
+}
+
+@include breakpoint-down(900px){
+    .slider{
+        width: 478px;
+        &-item{
+            box-shadow: none;
+            &__discount{
+                padding: 45px 6px;
+
+                &-title{
+                    font-size: 22px;
+                    line-height: 1;
+                }
+            }
+
+            &__info{
+                flex-direction: column;
+    
+                &-cost{
+                    flex-direction: row;
+                    padding: 10px 15px;
+                }
+            }
+
+            .info-product__image{
+                width: 90px;
+                height: 90px;
+            }
+            .info-product__title{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .info-cost__caption{
+                font-size: 28px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@include breakpoint-down(750px){
+    .site-main__container.container{
+        padding-left: 0;
+        padding-right: 0;
+
+        .site-main__info {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .site-main__title{
+            max-width: 80%;
+        }
+    }
+
+    .site-main__info {
+        flex-direction: column;
+        align-items: center;
+
+        .main-info__aside{
+            margin-right: 0;
+        }
+    }
+}
+
+@include breakpoint-down(600px){
+    .slider{
+        width: 340px;
+
+        .slider-item__info-product{
+            padding: 10px;
+        }
+
+        .info-product__image{
+            margin-right: 15px;
+        }
+    }
+    .slider-controller__button{
+        span{
+            display: none;
+        }
+    }
+
+    .site-main__title{
+        font-size: 22px;
+        line-height: 26px;
     }
 }
