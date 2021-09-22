@@ -294,7 +294,7 @@ button {
 }
 
 .btn-change__right {
-  background: #1567E9 url("../img/icons/black-right-arrow.png") no-repeat center center;
+  background: transparent url("../img/icons/black-right-arrow.png") no-repeat center center;
 }
 
 .btn-change__blue--left {
@@ -871,6 +871,16 @@ p.header-description {
 
 .site-main__info {
   margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-info__aside {
+  margin-right: 60px;
 }
 
 .main-info__aside-content {
@@ -946,6 +956,260 @@ p.header-description {
   background: #2f6dce;
   border-radius: 100%;
   background-size: contain;
+}
+
+.main-info__offer {
+  max-width: 880px;
+  width: 100%;
+}
+
+.main-info__offer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.main-info__offer-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-info__offer-item::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #2d2d2d;
+  margin-right: 5px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.main-info__offer-danger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E05C5C;
+  margin-bottom: 35px;
+}
+
+.main-info__offer-danger::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url("../img/icons/warning.svg") no-repeat center center;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 6px;
+}
+
+.main-info__offer div {
+  max-width: 540px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-info__offer div p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.slider-container {
+  position: relative;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  margin-bottom: 80px;
+}
+
+.slider-container__caption {
+  text-align: center;
+  color: #2f6dce;
+  margin-bottom: 30px;
+}
+
+.slider-container__buttons .btn-change {
+  position: absolute;
+}
+
+.slider-container__buttons .btn-change__left {
+  left: 10%;
+  top: 50%;
+}
+
+.slider-container__buttons .btn-change__right {
+  right: 10%;
+  top: 50%;
+}
+
+.slider-container .slider-controller {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.slider-container .slider-controller__button {
+  background: #ff3939;
+  border: 1px solid #ff3939;
+  -webkit-box-shadow: 0px 22px 44px -12px rgba(255, 57, 57, 0.69);
+          box-shadow: 0px 22px 44px -12px rgba(255, 57, 57, 0.69);
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 11px 14px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.slider-container .slider-controller__button:hover {
+  background-color: transparent;
+  color: #ff3939;
+}
+
+.slider-container .slider-controller__button-active {
+  background: transparent;
+  border-color: #2f6dce;
+  color: #2f6dce;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 840px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+}
+
+.slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.slider-item__discount {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px 0 0 6px;
+  padding: 45px 10px;
+  background-color: #ff3939;
+}
+
+.slider-item__discount-title {
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 48px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.slider-item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.slider-item__info-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 25px 10px 50px;
+}
+
+.slider-item .info-product__image {
+  margin-right: 40px;
+}
+
+.slider-item .info-product__title {
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.slider-item__info-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2f6dce;
+  color: #fff;
+  padding: 55px 22px;
+  border-radius: 0 6px 6px 0;
+}
+
+.slider-item__info-cost .info-cost__text {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.slider-item__info-cost .info-cost__caption {
+  white-space: nowrap;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.slider-item__info-cost .info-cost__caption-sub {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .site-main {
