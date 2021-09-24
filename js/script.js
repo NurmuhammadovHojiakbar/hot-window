@@ -57,3 +57,4 @@ elDiscountSliderContainers.forEach(elDiscountSliderContainer =>{
         elDiscountSlider.style.transform =`translateX(-${count * sliderWidth}px)`
     }
 })
+

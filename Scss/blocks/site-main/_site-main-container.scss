@@ -13,6 +13,11 @@
         background-color: $color-blue;
         color: #fff;
     }
+
+    &-white{
+        background-color: transparent;
+        color: $color-blue;
+    }
 }
 .site-main__info{
     margin-bottom: 70px;
